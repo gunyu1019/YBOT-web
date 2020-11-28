@@ -82,3 +82,6 @@ fabric.properties
 
 # DataBase data
 data.json
+/static/css/bootstrap/
+/static/js/bootstrap.bundle.js
+/static/js/bootstrap.js
