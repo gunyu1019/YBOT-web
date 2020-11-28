@@ -1,0 +1,125 @@
+@font-face{
+  font-family: "Nanum_Gothic-Bold";
+  src: url("../font/Nanum_Gothic/NanumGothic-Bold.ttf");
+}
+
+@font-face{
+  font-family: "Nanum_Gothic-Regular";
+  src: url("../font/Nanum_Gothic/NanumGothic-Regular.ttf");
+}
+
+@font-face{
+  font-family: "Noto_Sans_KR-Regular";
+  src: url("../font/Noto_Sans_KR/NotoSansKR-Regular.otf");
+}
+
+@font-face{
+  font-family: "Noto_Sans_KR-Bold";
+  src: url("../font/Noto_Sans_KR/NotoSansKR-Bold.otf");
+}
+
+body {
+  background-color: #2f353a;
+}
+
+.main_img{
+  background-image: url("../img/YBOT_main.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-position: center;
+}
+
+.main-section{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: #303030;
+  overflow: hidden;
+}
+
+section .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../img/wave.png");
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave.wave2{
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 0;
+}
+
+@keyframes animate{
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.main {
+  background: white;
+  width: 100%;
+}
+
+.about_main{
+  font-family: "Nanum_Gothic-Bold"!important;
+  font-weight: bold;
+}
+
+.adout_description{
+  font-family: "Nanum_Gothic-Regular"!important;
+}
+
+.about_img{
+  max-width: 100%;
+}
+
+.main_topic{
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  top: 300px;
+  font-family: "Noto_Sans_KR-Bold"!important;
+}
+
+.main_desc {
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  top: 400px;
+  font-family: "Noto_Sans_KR-Regular"!important;
+}
+
+@media (min-width: 1020px) {
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

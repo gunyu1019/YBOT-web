@@ -1,0 +1,36 @@
+.nav-item{
+    padding: 2px 5px 2px 5px;
+    font-size: 15px;
+}
+
+.nav-item a:hover{
+    background-color:#808080;
+    border-radius: 10px;
+}
+
+.brand {
+    padding: 5px 8px 5px 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navbar-brand:hover{
+    background-color:#808080;
+    border-radius: 10px;
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+    z-index: 5;
+}

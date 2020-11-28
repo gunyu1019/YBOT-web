@@ -1,0 +1,72 @@
+<?php
+    $json_string = file_get_contents("data.json");
+    $row = json_decode($json_string,true);
+    $IP = $row['network'];
+    $ID = $row['user'];
+    $PASSWORD = $row['password'];
+    $DATABASE = $row['database'];
+    $PORT = $row['port'];
+    $conn = mysqli_connect($IP,$ID,$PASSWORD,$DATABASE,$PORT);
+    $sql = "select server_count, member_count from DASHBOARD";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+    $guild_count = $row['server_count'];
+    $member_count = $row['member_count'];
+    mysqli_close($conn);
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YBOT</title>
+        <?php include("meta.html"); ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="static/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="static/css/index.css">
+    </head>
+    <body>
+        <noscript>
+            <style>
+                .main-content {
+                  display: none;
+                }
+            </style>
+            <span style="color: #ffffff; font-weight: bold;">
+                해당 웹사이트는 자바스크립트가 필요합니다! 이용하시려면 자바스크립트를 활성화해주세요!!
+            </span>
+        </noscript>
+        <div class="main-content">
+            <?php
+                $file_name = "index";
+                include("navbar.html");
+            ?>
+            <section class="main-section">
+                <div class="main_img"></div>
+                <div class="main_topic">YBOT</div>
+                <div class="main_desc">
+                    YBOT은 전적, 검색, 미니게임을 하나로 합쳐서 하나로 여러 기능을 체험할 수 있는, 다용도 디스코드 봇입니다.<br>
+                    <?php echo $guild_count; ?>서버와 <?php echo $member_count; ?>유저와 함께하는 디스코드봇입니다!
+                </div>
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+            </section>
+            <div class="main">
+                <div class="container">
+                    <div class="content-grid">
+                        <div>
+                            <h4 class="about_main">더욱 즐겁게 사용자와 경쟁해보세요!</h4>
+                            <p class="adout_description">YBOT을 통하여 다른 유저와 경쟁을 펼쳐보세요! 조만간 추가되는 돈 기능부터, 타자, 넌센스 기능까지 여러분들에게 경쟁의 재미를 보여드리죠!</p>
+                        </div>
+                        <div>
+                            <img src="static/img/information/minigame.gif" class="about_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
