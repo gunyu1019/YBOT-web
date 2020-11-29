@@ -1,2 +1,2 @@
-"# YBOT-web" 
-"# YBOT-web" 
+# YBOT-web
+기존 YBOT 웹사이트의 문제를 보완하여 만들게 된 새로운 형식의 사이트 입니다. 

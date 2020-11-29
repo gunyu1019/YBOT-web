@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YBOT</title>
+        <?php include("meta.html"); ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="static/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="static/css/invite.css">
+        <link rel="stylesheet" href="static/css/navbar.css">
+        <link rel="stylesheet" href="static/css/footer.css">
+        <link rel="stylesheet" href="static/css/vote_ad.css">
+        <meta http-equiv="refresh" content="0;url=https://discord.com/api/oauth2/authorize?client_id=680694763036737536&permissions=3533888&redirect_uri=http%3A%2F%2Fwww.yonghyeon.com%2FYBOT%2Fthank_you.html&scope=bot" />
+    </head>
+    <body>
+        <noscript>
+            <style>
+                .main-content {
+                    display: none;
+                }
+            </style>
+            <span style="color: #ffffff; font-weight: bold;">
+                    해당 웹사이트는 자바스크립트가 필요합니다! 이용하시려면 자바스크립트를 활성화해주세요!!
+                </span>
+        </noscript>
+        <div class="main-content">
+            <?php
+                $file_name = "invite";
+                include("navbar.php");
+            ?>
+            <section class="main-section">
+                <div class="main_img"></div>
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+            </section>
+            <div class="main" style="background: white">
+                <span class="topic">리다이렉트를 시도중입니다.</span><br>
+                <span class="desc">
+                    만약에 링크로 이동되지 않는다면,
+                    <a href="https://discord.com/oauth2/authorize?client_id=680694763036737536&permissions=3537986&redirect_uri=https%3A%2F%2Fgithub.com%2Fgunyu1019%2FYbot-3.0%2Fblob%2Fmaster%2Fthank_you.md&scope=bot">링크</a>
+                    를 클릭해주세요.
+                </span>
+                <?php include("vote_ad.html"); ?>
+            </div>
+            <?php include("footer.html"); ?>
+        </div>
+    </body>
+</html>
