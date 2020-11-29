@@ -21,13 +21,14 @@
         <meta charset="utf-8">
         <title>YBOT</title>
         <?php include("meta.html"); ?>
-        <script src="https://kit.fontawesome.com/eaa60a3ad0.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="static/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="static/css/index.css">
+        <link rel="stylesheet" href="static/css/navbar.css">
+        <link rel="stylesheet" href="static/css/footer.css">
     </head>
     <body>
         <noscript>
@@ -43,7 +44,7 @@
         <div class="main-content">
             <?php
                 $file_name = "index";
-                include("navbar.html");
+                include("navbar.php");
             ?>
             <section class="main-section">
                 <div class="main_img"></div>
@@ -120,21 +121,7 @@
                     <a href="invite.html" class="invite_btn">디스코드 봇 초대하기</a>
                 </div>
             </div>
-            <footer>
-                <div class="container">
-                    <div class="content-grid">
-                        <div>
-                            <span class="footer_topic">YBOT</span><br>
-                            © 2020 건유1019#0001 All right reserved.<br>
-                        </div>
-                        <div class="agent-pc"> </div>
-                        <div>
-                            <i class="fab fa-discord"></i><a href="forum" class="footer_link">Team Alpha (운영)</a><br>
-                            <i class="fab fa-github"></i><a href="forum" class="footer_link">Team Developer Space (개발)</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <?php include("footer.html"); ?>
         </div>
     </body>
 </html>

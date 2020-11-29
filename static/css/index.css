@@ -216,28 +216,3 @@ section .wave.wave4{
   text-decoration: none;
   outline: 0;
 }
-
-footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: #1b1e21;
-  color: white;
-}
-
-.footer_link{
-  padding-left: 5px;
-  color: white;
-}
-
-.footer_link:hover{
-  color: white
-}
-
-.footer_topic{
-  color: white;
-  font-weight: bold;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  font-family: "Noto_Sans_KR-Bold"!important;
-}
