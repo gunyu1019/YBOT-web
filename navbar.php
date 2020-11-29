@@ -1,10 +1,10 @@
 <?php
     $sr_only = '<span class="sr-only">(current)</span>';
-    if(!isset($file_name)){
+    if(!isset($file_name)) {
         $file_name = "";
     }
 ?>
-<nav class="navbar navbar-expand-lg navbar-dark" style="padding: 16px 16px 16px 16px">
+<nav class="navbar navbar-expand-lg navbar-dark" style="padding: 16px 16px 16px 16px;">
     <div class="container">
         <a class="navbar-brand" href="/YBOT/">
             <img src="static/img/YBOT.png" height="30px" width="30px">
