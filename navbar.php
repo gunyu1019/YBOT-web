@@ -20,10 +20,10 @@
             <a class="nav-link" href="/YBOT/">홈<?php if($file_name == "index") echo $sr_only;?></a>
             </li>
             <li class="nav-item <?php if($file_name == "invite") echo "active";?>">
-            <a class="nav-link" href="invite">초대<?php if($file_name == "invite") echo $sr_only;?></a>
+            <a class="nav-link" href="invite.html">초대<?php if($file_name == "invite") echo $sr_only;?></a>
             </li>
             <li class="nav-item <?php if($file_name == "dashboard") echo "active";?>">
-                <a class="nav-link" href="dashboard">대시보드<?php if($file_name == "dashboard") echo $sr_only; ?></a>
+                <a class="nav-link" href="dashboard.html">대시보드<?php if($file_name == "dashboard") echo $sr_only; ?></a>
             </li>
             <li class="nav-item dropdown <?php if($file_name == "docs") echo "active";?>">
             <a class="nav-link dropdown-toggle" href="docs" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,10 +40,10 @@
             </div>
             </li>
             <li class="nav-item <?php if($file_name == "term") echo "active";?>">
-                <a class="nav-link" href="#">이용약관<?php if($file_name == "term") echo $sr_only;?></a>
+                <a class="nav-link" href="term.html">이용약관<?php if($file_name == "term") echo $sr_only;?></a>
             </li>
             <li class="nav-item <?php if($file_name == "support") echo "active";?>">
-                <a class="nav-link" href="forum">지원<?php if($file_name == "support") echo $sr_only;?></a>
+                <a class="nav-link" href="forum.html">지원<?php if($file_name == "support") echo $sr_only;?></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/">YWEB</a>
