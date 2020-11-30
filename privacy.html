@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YBOT</title>
+        <?php include("meta.html"); ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="static/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="static/css/docs.css">
+        <link rel="stylesheet" href="static/css/navbar.css">
+        <link rel="stylesheet" href="static/css/footer.css">
+    </head>
+    <body>
+        <noscript>
+            <style>
+                .main-content {
+                    display: none;
+                }
+            </style>
+            <span style="color: #ffffff; font-weight: bold;">
+                해당 웹사이트는 자바스크립트가 필요합니다! 이용하시려면 자바스크립트를 활성화해주세요!!
+            </span>
+        </noscript>
+        <div class="main-content">
+                <?php
+                    $file_name = "docs";
+                    include("navbar.php");
+                ?>
+            <div class="backgroud-navbar"></div>
+            <div class="container">
+                <div class="docs">
+                    <h2>YBOT 개인정보 처리방침</h2>
+                    <ul>
+                        <li>
+                            <span class="topic">작성일:</span>
+                            <span>2020년 08월 15일</span>
+                        </li>
+                    </ul>
+                    <div class="privacy">
+                        <h4 class="topic">1. 정의</h4>
+                        <span class="decs">
+                            YBOT은 정보통신망법에 의거하여 YBOT을 이용하시는 유저분들의 개인정보 처리 현황을 알려주기 위해 쉽고 상세하게 서술하였습니다.
+                        </span>
+                    </div>
+                    <div class="privacy">
+                        <h4 class="topic">2. 개인정보 처리의 목적</h4>
+                        <span class="decs">
+                            YBOT은 아래의 목적을 위하여 개인정보를 처리하고 있으며 이 이외의 용도로는 사용을 하지 않습니다.
+                            <ul>
+                                <li>
+                                    악의적인 이용을 방지하기 위함.
+                                    <ul>
+                                        <li>과도한 명령어 도배 등으로 방에게 피해를 방지하기 위함.</li>
+                                        <li>오류 등 버그들을 신속하게 수정하기 위함.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    유저들이 보다 더 편리한 이용을 위함.
+                                    <ul>
+                                        <li>해당에 소속되는 항목은 3번 첫번째와 네번째를 제외한 모두 속하며, 유저 동의하에 저장을 한다는 것을 원칙으로 한다.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="privacy">
+                        <h4 class="topic">3. 수집하는 개인정보 항목</h4>
+                        <span class="decs">
+                            <ul>
+                                <li>유저데이터 정보, 서버 정보, 서버내 채널 정보, 명령어 사용 내역 (필수)</li>
+                                <li>배틀그라운드 UUID, 시즌 혹은 랭크 데이터 (필수, PUBG BOT 개인정보 처리방침)</li>
+                                <li>스팀 닉네임, 배틀그라운드 닉네임, 리그오브레전드 닉네임, 오버워치 닉네임, 마인크래프트 닉네임, 브롤스타즈 태그, 클래시로얄 태그 (선택1)</li>
+                                <li>타자 전적(최고 타수 및 평균타수), 넌센스 게임 전적(평균소요시간, 정답횟수 등) (선택2)</li>
+                            </ul>
+                            선택1, 선택2의 경우 유저가 선택적으로 수집을 거부할 권리를 가집니다.
+                            필수 수집사항은 사용자가 거부할 경우 YBOT을 이용할 때 불이익이 가해질 수 있습니다.
+                        </span>
+                    </div>
+                    <div class="privacy">
+                        <h4 class="topic">4. 개인정보 보유 및 이용기간</h4>
+                        <span class="decs">
+                            개인정보는 서비스 종료까지 보관을 원칙으로 하며, 유저의 요청시 언제든지 파기 혹은 수집된 정보를 요청할 수 있습니다.
+                        </span>
+                    </div>
+                    <div class="privacy">
+                        <h4 class="topic">5. 개인정보의 파기</h4>
+                        <span class="decs">
+                            개인정보의 수집 및 이용 목적이 달성되면, 개인정보를 신속하고 안전한 방법으로 파기합니다.
+                            수집하는 개인정보 항목의 첫번째, 두번쨰 항목을 제외하면 유저가 데이터 파기를 요구했을 경우 원칙적으로 한달간 보관후 파기합니다.
+                        </span>
+                    </div>
+                    <div class="privacy">
+                        <h4 class="topic">6. 개정 전 고지 의무</h4>
+                        <span class="decs">
+                            본 개인정보처리방침의 내용 추가, 삭제 및 수정이 있을 경우 개정 최소 7일 전에 ‘공지사항’ 혹은 ‘웹후크’, ‘블로그’등을 통하여 공지를 진행할것입니다.
+                            다만, 수집하는 개인정보의 항목, 이용목적의 변경 등 이용자의 권리와 예민한 변경이 발생할 때에는 최소 14일전에 공지하며 해당 변경사안에 거부할 경우 탈퇴를 유도할 의무가 있습니다
+                        </span>
+                    </div>
+                    <div class="privacy">
+                        <h4 class="topic">7. 개인정보 보호책임자 및 담당자</h4>
+                        <span class="decs">
+                            개인정보에 대해 문의가 존재할 경우 아래 이메일을 통해 문의주시면 신속히 도와드리겠습니다.
+                            <ul>
+                                <li>
+                                    <span class="topic">담당자:</span> 건유1019#0001
+                                </li>
+                                <li>
+                                    <span class="topic">직책:</span> Team Alpha 대표, Team Developer Space 대표, YBOT 총책임자
+                                </li>
+                                <li>
+                                    <span class="topic">이메일:</span> gunyu1019@yhs.kr, gunyu10193@gmail.com
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <?php include("footer.html"); ?>
+        </div>
+    </body>
+</html>

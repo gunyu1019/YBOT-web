@@ -34,3 +34,9 @@
     font-size: 20px;
     z-index: 5;
 }
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        background: #343a40;
+    }
+}

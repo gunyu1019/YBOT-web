@@ -10,8 +10,8 @@
             <img src="static/img/YBOT.png" height="30px" width="30px">
             <span class="brand">YBOT</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color:white;">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,9 +34,12 @@
                 <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#search">검색</a>
                 <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#game">게임</a>
                 <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#game_stat">전적</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#">관리</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#">이모지</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#">관리자</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#system">관리</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#emoji">이모지</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#admin">관리자</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="term.html">이용약관</a>
+                <a class="dropdown-item" href="privacy.html">개인정보 처리방침</a>
             </div>
             </li>
             <li class="nav-item <?php if($file_name == "term") echo "active";?>">
