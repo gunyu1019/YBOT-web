@@ -1,0 +1,31 @@
+[
+    {
+        "topic":"기본",
+        "description":"디스코드봇에 기본 기능에 대해 서술 되어 있습니다.",
+        "example_command":["정보","핑","접두어"]
+    },{
+        "topic":"검색",
+        "description":"검색과 관련된 기능에 대해 서술 되어 있습니다.",
+        "example_command":["날씨","택배","위키","정류장"]
+    },{
+        "topic":"전적",
+        "description":"게임 전적 검색과 관련된 기능에 대해 서술 되어 있습니다.",
+        "example_command":["롤","옵치","레식","스팀"]
+    },{
+        "topic":"관리",
+        "description":"관리와 관련된 기능에 대해 서술 되어 있습니다.",
+        "example_command":["프로필","서버정보","투표","찬반투표"]
+    },{
+        "topic":"게임",
+        "description":"소소한 재미를 줄 수 있는 기능에 대해 서술 되어 있습니다.",
+        "example_command":["타자","넌센스","따라하기"]
+    },{
+        "topic":"관리자",
+        "description":"이 디스코드봇 관리자만 쓸 수 있는 기능에 대해 서술 되어 있습니다.",
+        "example_command":["cmd","eval","exec","블랙리스트"]
+    },{
+        "topic":"이모지",
+        "description":"이모지(밈)에 대한 기능에 대해 서술 되어 있습니다.",
+        "example_command":null
+    }
+]

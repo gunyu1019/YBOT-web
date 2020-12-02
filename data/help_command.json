@@ -1,0 +1,483 @@
+[
+    {
+        "topic":["help","도움","도움말"],
+        "value":["검색할 명령어(선택)"],
+        "category":"기본",
+        "description1":"YBOT 기본기능에 대해 알아보실 수 있습니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["코로나"],
+        "value":["지역"],
+        "category":"검색",
+        "description1":"국내 코로나 발생 현황을 불러옵니다.",
+        "description2":"지역에는 아래의 지역을 검색하실수 있습니다.\n지역 목록: 서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주, 검역\n본 기능은 코로나 종식시 중단될 예정입니다.",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["코로나해외"],
+        "value":["대륙"],
+        "category":"검색",
+        "description1":"해외 코로나 감염 현황을 알려줍니다.",
+        "description2":"대륙 목록: 아시아,중동,유럽,미주,오세아니아,아프리카,기타\n본 기능은 코로나 종식시 중단될 예정입니다.",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["한강"],
+        "value":[],
+        "category":"검색",
+        "description1":"한강 수온을 알려줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["날씨"],
+        "value":["지옥 혹은 \"전국\""],
+        "category":"검색",
+        "description1":"날씨를 알려줍니다. 날씨기능은 오타가 나도 자동적으로 고쳐서 알려주며, 해외 날씨도 확인할수 있습니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["택배"],
+        "value":["택배회사","운송장 번호"],
+        "category":"검색",
+        "description1":"택배 배송현황을 추적하여 알려줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["택배 목록"],
+        "value":[],
+        "category":"검색",
+        "description1":"검색가능한 택배 회사 목록을 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["번역"],
+        "value":["번역할 언어","내용"],
+        "category":"검색",
+        "description1":"[내용]을 번역해줍니다. 시작할 언어는 알아서 분석하여 설정합니다.",
+        "description2":"언어는 한국어,영어,일본어,중국어(간체/번체),스페인어,프랑스어,러시아어,베트남어,인도네시아어,태국어,독일어,이탈리아어를 지원합니다.\n(다소 일부언어간은 상호작용이 안될수 있습니다.)",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["재난문자"],
+        "value":["지역(선택)","로딩할 갯수(선택)"],
+        "category":"검색",
+        "description1":"재난 문자를 불러옵니다.",
+        "description2":"선택을 미기재시 5개, 전국으로 설정됩니다.\n지역은 (도/시)만 가능합니다.",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["스팀(게임)"],
+        "value":["게임명"],
+        "category":"검색",
+        "description1":"해당 기차역에 열차정보를 불러옵니다.",
+        "description2":"이 정보는 실시간으로 반영이 되긴하지만, 이것을 실제로 사용하다가 열차를 놓칠 경우 YBOT은 책임지지 않습니다.",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["급식"],
+        "value":["학교명"],
+        "category":"검색",
+        "description1":"해당학교의 급식 정보를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["시간표"],
+        "value":["학교명"],
+        "category":"검색",
+        "description1":"해당학교의 시간표 정보를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["정류장"],
+        "value":["정류장 명칭, 번호"],
+        "category":"검색",
+        "description1":"정류장 정보를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["위키"],
+        "value":["검색 내용"],
+        "category":"검색",
+        "description1":"위키백과에서 검색하여 요약하여 나타냅니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["스팀"],
+        "value":["닉네임 | 커스텀아이디 혹은 유저코드","커스텀아이디(여부) 혹은 유저코드(여부) | 닉네임 검색 경우 미기재"],
+        "category":"전적",
+        "description1":"Steam 프로필을 불러옵니다.",
+        "description2":"커스텀ID 혹은 유저코드로 전적을 조회하실 경우 [커스텀ID(여부) 혹은 유저코드(여부) | 닉네임 검색 경우 미기재] 이곳에 '커스텀ID', '유저코드'라고 적어주셔야합니다.\n 간혹가다, 중복되는 닉네임은 조회되지 않거나, 다른 계정이 나오기도 합니다. 그럴 경우 커스텀ID 혹은 유저코드를 사용해주세요.\n유저코드를 모르시는 분들은 'https://steamidfinder.com/lookup/' 을 이용해서 찾아보시길 추천 드립니다.",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["배그","배틀그라운드"],
+        "value":["일반(3인칭)/경쟁(랭크,경쟁3인칭)/1인칭/경쟁1인칭","닉네임(선택)","시즌(선택)"],
+        "category":"전적",
+        "description1":"배틀그라운드 전적을 검색해줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["배그솔로","배틀그라운드솔로"],
+        "value":["일반(3인칭)/경쟁(랭크,경쟁3인칭)/1인칭/경쟁1인칭","닉네임(선택)","시즌(선택)"],
+        "category":"전적",
+        "description1":"배틀그라운드 솔로 전적을 검색해줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["배그듀오","배틀그라운드듀오"],
+        "value":["일반(3인칭)/1인칭","닉네임(선택)","시즌(선택)"],
+        "category":"전적",
+        "description1":"배틀그라운드 듀오 전적을 검색해줍니다.",
+        "description2":"경쟁전 기능은 듀오 전적을 지원하지 않습니다.",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["배그스쿼드","배틀그라운드스쿼드"],
+        "value":["일반(3인칭)/경쟁(랭크,경쟁3인칭)/1인칭/경쟁1인칭","닉네임(선택)","시즌(선택)"],
+        "category":"전적",
+        "description1":"배틀그라운드 스쿼드 전적을 검색해줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["레식","레인보우식스"],
+        "value":["닉네임"],
+        "category":"전적",
+        "description1":"레인보우식스 전적을 검색해줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["옵치","오버워치"],
+        "value":["닉네임","빠른대전/경쟁전"],
+        "category":"전적",
+        "description1":"오버워치 전적을 검색해줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["롤","리그오브레전드"],
+        "value":["닉네임"],
+        "category":"전적",
+        "description1":"리그오브레전드 전적을 검색해줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["하이픽셀"],
+        "value":["전적/길드","닉네임/길드명","(전적 조회 한정)게임명/(길드 조회 한정)닉네임/길드명칭","(길드 조회 한정)정보/성과"],
+        "category":"전적",
+        "description1":"마인크래프트 하이픽셀 서버 전적을 조회해 줍니다.",
+        "description2":"\n전적 조회가능한 게임: 종합,아케이드[Arcade]\\*,아케이드/Galaxy Wars[Arcade/Galaxy Wars]\\*,아케이드/Zombies[Arcade/Zombies]\\*,아케이드/Hide and Seek[Arcade/Hide and Seek]\\*,배드워즈[Bed Wars],빌드 배틀[Bulid Battle]\\*,Blitz Survival Games,Cops and Crims,Crazy Walls,결투[Duels]\\*,Mega Walls,머더 미스터리[머더,Muder,Muder Mystery]†,스카이워즈[Skywars]\\*,스매쉬 히어로[Smash Heroes]\\*,스피드 UHC[Speed UHC]\\*,TNT 게임[TNT Games]\\*,UHC 챔피언[UHC Champions]\\*,Warlords,Arena brawl¶,Paintball¶,Quake¶,Turbo Kart Racer¶,VampireZ¶,Walls¶\nSky Clash는 하이픽셀 서비스 종료에 따른 기능이 중단되었습니다.\n\n* ▶ 한국어 번역완료(한국어로 치셔도 감지하며, 영어로 게임 이름을 치셔도 됩니다.)\n† ▶ 여러 이름 사용가능(게임이름 말고 괄호에 써저있는 이름으로도 검색이 가능합니다.)\n¶ ▶ 클래식 게임",
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["마크"],
+        "value":["닉네임(선택)"],
+        "category":"전적",
+        "description1":"마인크래프트 전적을 검색해줍니다. 닉네임을 적지않을 경유 마인크래프트 API 상태를 알려줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["브롤","브롤스타즈"],
+        "value":["유저태그","종합/3vs3/쇼다운(선택)"],
+        "category":"전적",
+        "description1":"브롤스타즈 전적을 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["클로","클래시로얄"],
+        "value":["코드","유저/클랜(선택)"],
+        "category":"전적",
+        "description1":"클래시로얄에서 전적을 불러옵니다. 유저 혹은 클랜 중에 선택하여 작성하지않을 경우 유저로 자동으로 설정되어 검색됩니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["TFT"],
+        "value":["닉네임"],
+        "category":"전적",
+        "description1":"리그오브레전드의 게임중 하나인 \"전략적 팀 전투(TFT)\"의 전적을 조회합니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["포나","포트나이트"],
+        "value":["닉네임"],
+        "category":"전적",
+        "description1":"포트나이트의 전적을 조회합니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["투표"],
+        "value":["주제>||<항목1>,<항목2>,<항목3"],
+        "category":"관리",
+        "description1":"다수의 항목을 고르는 투표를 진행합니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["찬반투표"],
+        "value":["주제"],
+        "category":"관리",
+        "description1":"무언가에 안건에 대한 찬성과 반대의 투표를 진행합나다",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["공지"],
+        "value":["작성/생성/제거/목록","채널맨션(작성 제외) | 내용(작성 한정)"],
+        "category":"관리",
+        "description1":"YBOT 소식에 대해 들어보고 싶으신가요? 공지사항 기능을 사용해보세요!",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["웹후크"],
+        "value":["생성/제거","URL"],
+        "category":"관리",
+        "description1":"웹후크를 통하여 YBOT 소식을 접할수 있습니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["시계"],
+        "value":[],
+        "category":"관리",
+        "description1":"**폰에서는 추천하지않습니다.** 디지털 시계 모양의 시계를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["접두어"],
+        "value":["설정/초기화/정보","(설정 사용)설정할 접두어"],
+        "category":"기본",
+        "description1":"접두어를 설정합니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["정보"],
+        "value":[],
+        "category":"기본",
+        "description1":"YBOT 정보를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["시스템"],
+        "value":[],
+        "category":"기본",
+        "description1":"YBOT 서버 시스템 상태를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["ping","핑"],
+        "value":[],
+        "category":"기본",
+        "description1":"Pong!",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["블랙리스트"],
+        "value":["추가/여부/제거","(추가/제거 사용시 한정)맨션"],
+        "category":"관리자",
+        "description1":"해당 기능을 통해 유저가 YBOT을 사용하지 못하도록 설정할수 있습니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["관리자여부"],
+        "value":[],
+        "category":"관리자",
+        "description1":"당신은 과연 제봇의 관리자일까요?.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["eval"],
+        "value":["명령어"],
+        "category":"관리자",
+        "description1":"eval로 직접 테스트 해봅니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["exec"],
+        "value":["명령어"],
+        "category":"관리자",
+        "description1":"exec로 직접 테스트 해봅니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["cmd"],
+        "value":["명령어"],
+        "category":"관리자",
+        "description1":"cmd로 직접 테스트 해봅니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["echo"],
+        "value":["내용"],
+        "category":"관리자",
+        "description1":"봇이 말을 따라합니다!(아쉽게도 봇 관리자만 쓸수 있습니다.)",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["주사위"],
+        "value":["굴릴 주사위 갯수"],
+        "category":"게임",
+        "description1":"주사위 갯수만큼 주사위를 굴립니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["가위바위보"],
+        "value":[],
+        "category":"게임",
+        "description1":"봇이랑 가위바위 해보실래요?",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["따라하기"],
+        "value":["내용"],
+        "category":"게임",
+        "description1":"그 내용을 따라해줍니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["넌센스"],
+        "value":[],
+        "category":"게임",
+        "description1":"넌센스 문제 한번 풀어볼래요...?",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["타자"],
+        "value":["싱글/멀티(선택)","한글/영어(선택)"],
+        "category":"게임",
+        "description1":"타자 연습 게임 입니다.",
+        "description2":"이 봇의 관리자 최대 타자 속도는 422타입니다. 자, 한번 저를 잡아보시겠어요?",
+        "example":"=타자 멀티 한글",
+        "example_picture":"data/docs_picture/타자.gif"
+    },{
+        "topic":["사용자문제"],
+        "value":[],
+        "category":"이모지",
+        "description1":"말 그대로 사용자문제",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["그래도사용자문제"],
+        "value":[],
+        "category":"이모지",
+        "description1":"말 그대로 그래도사용자문제",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["문제"],
+        "value":[],
+        "category":"이모지",
+        "description1":"말 그대로 문제",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["코로나에감염된!"],
+        "value":[],
+        "category":"이모지",
+        "description1":"코로나에감염된이라는 이모티콘을 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["thinking_avi"],
+        "value":[],
+        "category":"이모지",
+        "description1":"돌아가는 얼굴!~",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["BEE"],
+        "value":[],
+        "category":"이모지",
+        "description1":"마인크래프트 꿀벌 이모지 입니다~",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["청소"],
+        "value":["갯수"],
+        "category":"관리",
+        "description1":"채팅 청소 기능입니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["프로필"],
+        "value":["맨션(선택)"],
+        "category":"관리",
+        "description1":"유저 정보를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["서버정보"],
+        "value":[],
+        "category":"관리",
+        "description1":"서버 정보를 불러옵니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["서버목록"],
+        "value":[],
+        "category":"관리자",
+        "description1":"서버 목록를 불러옵니다. 해당 기능은 봇 관리자만 DM을 통해 사용할 수 있습니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["비동기eval"],
+        "value":["명령어"],
+        "category":"관리자",
+        "description1":"eval로 직접 테스트 해봅니다. 대신 비동기로 작동됩니다.",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    },{
+        "topic":["애니"],
+        "value":["애니명"],
+        "category":"검색",
+        "description1":"애니메이션을 검색하는 기능입니다..",
+        "description2":null,
+        "example":null,
+        "example_picture":null
+    }
+]

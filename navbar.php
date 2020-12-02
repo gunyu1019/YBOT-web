@@ -30,13 +30,13 @@
                 문서
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#inform">기본</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#search">검색</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#game">게임</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#game_stat">전적</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#system">관리</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#emoji">이모지</a>
-                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs"?>#admin">관리자</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs.html"?>?page=기본">기본</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs.html"?>?page=검색">검색</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs.html"?>?page=게임">게임</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs.html"?>?page=전적">전적</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs.html"?>?page=관리">관리</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs.html"?>?page=이모지">이모지</a>
+                <a class="dropdown-item" href="<?php if($file_name != "docs") echo "docs.html"?>?page=관리자">관리자</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="term.html">이용약관</a>
                 <a class="dropdown-item" href="privacy.html">개인정보 처리방침</a>

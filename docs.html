@@ -1,0 +1,121 @@
+<?php
+    $category_json = file_get_contents("data/help_category.json");
+    $command_json = file_get_contents("data/help_command.json");
+    $category = json_decode($category_json,true);
+    $command = json_decode($command_json,true);
+    if (!isset($_GET['page'])) {
+        $page_name = "기본";
+    } else{
+        $page_name = $_GET['page'];
+        $true_page = FALSE;
+        for($i=0; $i<count($category); $i++){
+            if($page_name == $category[$i]['topic']){
+                $true_page = TRUE;
+                break;
+            }
+        }
+        if(!$true_page){
+            $page_name = "기본";
+        }
+    }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YBOT</title>
+        <?php include("meta.html"); ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="static/js/bootstrap/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="static/css/docs.css">
+        <link rel="stylesheet" href="static/css/navbar.css">
+        <link rel="stylesheet" href="static/css/footer.css">
+        <link rel="stylesheet" href="static/css/sidemenu.css">
+        <script src="static/js/auto_scroll.js"></script>
+        <script src="static/js/sidemenu.js"></script>
+    </head>
+    <body>
+        <noscript>
+            <style>
+                .main-content {
+                    display: none;
+                }
+            </style>
+            <span style="color: #ffffff; font-weight: bold;">
+                해당 웹사이트는 자바스크립트가 필요합니다! 이용하시려면 자바스크립트를 활성화해주세요!!
+            </span>
+        </noscript>
+        <div class="main-content">
+            <?php
+                $file_name = "docs";
+                include("navbar.php");
+            ?>
+            <div class="backgroud-navbar" style="background: #23272b;"></div>
+            <div class="gird-docs">
+                <div class="side-menu" id="side-menu">
+                    <a href="javascript:void(0)" class="sidemenu-close" onclick="closeNav()">&times;</a>
+                    <?php
+                        for($i=0; $i<count($category); $i++){
+                            echo "<span class='topic docs-category-title'>";
+                            echo $category[$i]['topic'];
+                            echo "</span>";
+                            for($j=0; $j<count($command); $j++){
+                                if($command[$j]['category'] == $category[$i]['topic']){
+                                    echo "<a href='docs.html?page=";
+                                    echo $command[$j]['category'];
+                                    echo "#";
+                                    echo $command[$j]['topic'][0];
+                                    echo "' class='docs-category-desc'>";
+                                    echo $command[$j]['topic'][0];
+                                    echo "</a>";
+                                }
+                            }
+                        }
+                    ?>
+                </div>
+                <div class="docs-file">
+                    <a onclick="openNav()" class="sidemenu-open">&#9776; menu</a>
+                    <?php
+                        for($i=0; $i<count($command); $i++){
+                            if($command[$i]['category'] == $page_name){
+                                echo "<h4 class='topic docs-command-topic' id='";
+                                echo $command[$i]['topic'][0];
+                                echo "'>";
+                                for ($j=0;$j<count($command[$i]['topic']);$j++){
+                                    echo "=";
+                                    echo $command[$i]['topic'][$j];
+                                    for ($k=0;$k<count($command[$i]['value']);$k++){
+                                        echo " <";
+                                        echo $command[$i]['value'][$k];
+                                        echo ">";
+                                    }
+                                    echo "<br>";
+                                }
+                                echo "</h3>";
+                                echo "<span class='decs'>";
+                                echo $command[$i]['description1'];
+                                if (!$command[$i]['description2'] == null) {
+                                    echo "<br><br>";
+                                    echo $command[$i]['description2'];
+                                }
+                                if (!$command[$i]['example'] == null) {
+                                    echo "<br><span class='topic docs-exam'>예제: </span>";
+                                    echo $command[$i]['example'];
+                                }
+                                if (!$command[$i]['example_picture'] == null) {
+                                    echo "<br><img src='";
+                                    echo $command[$i]['example_picture'];
+                                    echo "' class='exam-picture'>";
+                                }
+                                echo "</span>";
+                            }
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

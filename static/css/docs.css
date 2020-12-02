@@ -66,6 +66,10 @@ a:hover{
     display: block;
 }
 
+.docs-category-desc{
+    padding-left: 40px;
+}
+
 @media screen and (max-width: 1024px){
     .decs{
         padding-right: 20px;
@@ -77,5 +81,62 @@ a:hover{
     .decs{
         padding-right: 10px;
         padding-left: 10px;
+    }
+}
+
+.side-menu {
+    background: #23272b;
+    height: 100%;
+}
+
+
+.docs-file {
+    width: 100%;
+}
+
+.docs-category-title{
+    padding-left: 5px;
+    font-family: Noto_Sans_KR-Bold;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+.docs-category-desc{
+    font-family: Noto_Sans_KR-Regular;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+.docs-category-desc:hover{
+    background: #3c3c3c;
+}
+
+.docs-file{
+    color: white;
+    padding-left: 20px;
+}
+
+.docs-command-topic{
+    padding-top: 30px;
+}
+
+.exam-picture{
+    max-width: 520px;
+}
+
+.docs-exam{
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 1024px){
+    .gird-docs{
+        display: grid;
+        grid-template-columns: 250px 1fr;
     }
 }

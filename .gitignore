@@ -85,9 +85,4 @@ data.json
 
 # Bootstrap
 static/css/bootstrap/
-static/js/bootstrap.bundle.min.js.map
-static/js/bootstrap.min.js.map
-static/js/bootstrap.bundle.js.map
-static/js/bootstrap.bundle.min.js
-static/js/bootstrap.js.map
-static/js/bootstrap.min.js
+static/js/bootstrap/
